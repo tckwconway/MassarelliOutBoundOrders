@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="DATA_01" Class="LQ_SalesRepGroupListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DELL850;Initial Catalog=DATA_01;Persist Security Info=True;User ID=sa" SettingsObjectName="MassarelliOutBoundOrders.My.MySettings" SettingsPropertyName="DATA_01ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VLQ_SalesRepGroupList2012" Member="VLQ_SalesRepGroupLists">
+    <Type Name="VLQ_SalesRepGroupList">
+      <Column Name="user_def_fld_1" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

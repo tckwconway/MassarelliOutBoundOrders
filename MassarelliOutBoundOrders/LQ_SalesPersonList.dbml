@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="DATA_01" Class="LQ_SalesPersonListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DELL850;Initial Catalog=DATA_01;Persist Security Info=True;User ID=sa" SettingsObjectName="MassarelliOutBoundOrders.My.MySettings" SettingsPropertyName="DATA_01ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VLQ_SalesPersonList2012" Member="VLQ_SalesPersonLists">
+    <Type Name="VLQ_SalesPersonList">
+      <Column Name="slspsn_no" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="slspsn_name" Type="System.String" DbType="Char(40)" CanBeNull="true" />
+      <Column Name="email_addr" Type="System.String" DbType="Char(40)" CanBeNull="true" />
+      <Column Name="user_def_fld_1" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="file_path_name" Type="System.String" DbType="Char(1000)" CanBeNull="true" />
+      <Column Name="send" Type="System.Boolean" DbType="Int" CanBeNull="false" />
+      <Column Name="save" Type="System.Boolean" DbType="Int" CanBeNull="false" />
+      <Column Name="sent" Type="System.Boolean" DbType="Int" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

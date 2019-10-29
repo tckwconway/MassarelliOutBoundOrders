@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54682C55-E3BA-4BA9-B99B-23320DE1E32F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MassarelliOutBoundOrders.My.MyApplication</StartupObject>
+    <RootNamespace>MassarelliOutBoundOrders</RootNamespace>
+    <AssemblyName>MassarelliOutBoundOrders</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>Resources\MassarelliIcon_OutBoundOrders4848.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MassarelliOutBoundOrders.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MassarelliOutBoundOrders.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>MassarelliOutBoundOrders.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>MassarelliOutBoundOrders.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="BOOutBoundOrders" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppUtilities.vb" />
+    <Compile Include="BaseForm.Designer.vb">
+      <DependentUpon>BaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm.Designer.vb">
+      <DependentUpon>CalendarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnDisplayIndexSort.vb" />
+    <Compile Include="ColumnLayoutXMLSerialize.vb" />
+    <Compile Include="ColumnSettings.Designer.vb">
+      <DependentUpon>ColumnSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridColumnsList.vb" />
+    <Compile Include="EmailFromOutlook.Designer.vb">
+      <DependentUpon>EmailFromOutlook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmailFromOutlook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelEmailFileList.vb" />
+    <Compile Include="ExcelEmailOptions.Designer.vb">
+      <DependentUpon>ExcelEmailOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelEmailOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelExport.vb" />
+    <Compile Include="FTPFileList.vb" />
+    <Compile Include="FTPClient.vb" />
+    <Compile Include="FTPOptions.Designer.vb">
+      <DependentUpon>FTPOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FTPOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LQ_SalesPersonList.vb">
+      <DependentUpon>LQ_SalesPersonList.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LQ_SalesRepGroupList.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LQ_SalesRepGroupList.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MassarelliOutBound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MassarelliOutBound.Designer.vb">
+      <DependentUpon>MassarelliOutBound.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MacolaStartup.vb" />
+    <Compile Include="MassarelliOutBoundUtilites.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OutboundColumnOrder.vb" />
+    <Compile Include="SalesRepList.vb" />
+    <Compile Include="SaveGridColumnPreset.vb" />
+    <Compile Include="SettingsMas.Designer.vb">
+      <DependentUpon>SettingsMas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsMas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripItemComparer.vb" />
+    <Compile Include="TripleDES.vb" />
+    <Compile Include="VLQ_SalesPersonList.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VLQ_SalesPersonList.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="VLQ_SalesPersonList.vb">
+      <DependentUpon>VLQ_SalesPersonList.dbml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="VLQ_SalesPersonList.dbml.layout">
+      <DependentUpon>VLQ_SalesPersonList.dbml</DependentUpon>
+    </None>
+    <None Include="LQ_SalesPersonList.dbml.layout">
+      <DependentUpon>LQ_SalesPersonList.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="ColumnSettings.resx">
+      <DependentUpon>ColumnSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmailFromOutlook.resx">
+      <DependentUpon>EmailFromOutlook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelEmailOptions.resx">
+      <DependentUpon>ExcelEmailOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTPOptions.resx">
+      <DependentUpon>FTPOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LQ_SalesRepGroupList.dbml.layout">
+      <DependentUpon>LQ_SalesRepGroupList.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="MassarelliOutBound.resx">
+      <DependentUpon>MassarelliOutBound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsMas.resx">
+      <DependentUpon>SettingsMas.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="VLQ_SalesPersonList.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>VLQ_SalesPersonList.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\BOOutBoundOrders.OutBoundList.datasource" />
+    <None Include="My Project\DataSources\BOOutBoundOrders.OutBoundObj.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOOutBoundOrders\BOOutBoundOrders.vbproj">
+      <Project>{2C27B51C-0C3A-40E6-9075-73A0E152FAA5}</Project>
+      <Name>BOOutBoundOrders</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OutBoundOrders.ico" />
+    <Content Include="OutBoundOrders2.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="LQ_SalesPersonList.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LQ_SalesRepGroupList.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LQ_SalesRepGroupList.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\DataSources\BOOutBoundOrders.AppStoredSettings.datasource" />
+    <None Include="My Project\DataSources\BOOutBoundOrders.OutBoundHistObj.datasource" />
+    <None Include="My Project\DataSources\BOOutBoundOrders.RepGroupObj.datasource" />
+    <None Include="My Project\DataSources\ExcelEmailFileList.datasource" />
+    <None Include="My Project\DataSources\FTPFileList.datasource" />
+    <None Include="My Project\DataSources\MassarelliOutBoundUtilites.datasource" />
+    <None Include="My Project\DataSources\VLQ_SalesPersonList.datasource" />
+    <None Include="Resources\Excel 16x16.ico" />
+    <None Include="Resources\Excel.ico" />
+    <None Include="Resources\Excel_Email_02.ico" />
+    <None Include="Resources\CalendarControl.ico" />
+    <None Include="Resources\CalendarControl2020.ico" />
+    <None Include="Resources\CalendarHeader.ico" />
+    <None Include="Resources\CalendarHeader1.ico" />
+    <None Include="Resources\CalendarHeaderBlue.ico" />
+    <None Include="Resources\Exit1313.ico" />
+    <None Include="Resources\Email-Outlook_02.ico" />
+    <None Include="Resources\Gridselect.ico" />
+    <None Include="Resources\Send.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\Check-Uncheck_06.ico" />
+    <None Include="Resources\FTPExcel.ico" />
+    <None Include="Resources\Refresh_16-16.ico" />
+    <None Include="Resources\Cancel Clear 1616.ico" />
+    <None Include="Resources\RefreshData_051.ico" />
+    <None Include="Resources\Check-Uncheck_13x13.ico" />
+    <None Include="Resources\MassarelliIcon_OutBoundOrders4848.ico" />
+    <Content Include="Tab.ico" />
+    <Content Include="Update AvgDaysToPay.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
